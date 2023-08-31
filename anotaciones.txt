@@ -1,0 +1,2 @@
+falta verificar la letra y tamaño de la fuente
+en el subscription del aside el subtitulo ver tamaño y weight

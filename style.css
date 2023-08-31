@@ -1,0 +1,857 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* HEADER */
+
+/*lado izquierdo*/
+.headerContainer{
+    background-color: #2d2c2d;
+    display: flex;
+    height: 56px;
+    justify-content: space-between;
+}
+
+.navegadorLeft{
+    display: flex;
+    padding-left: 25px;
+    gap: 25px;
+}
+
+.logoContainer{
+    display: flex;
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburguesa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*centro del header*/
+
+.navegadorSearch{
+    align-items: center;
+    display: flex;
+}
+
+.navegadorSearchInput{
+    align-items: center;
+    border-radius: 2px, 0px, 0px, 2px;
+    height: 40px;
+    width: 362px;
+    background-color: #121212;
+    border: solid 1px #AAAAAA;
+}
+
+.navegadorSearchInput::placeholder{
+    font-size: 1rem;
+    padding-left: 5px;
+    
+}
+
+.containerSearchInput{
+    display: flex;
+}
+
+.containerLupa{
+    height: 40px;
+    background-color: #AAAAAA;
+    width: 64px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.containerMicrofono{
+    background-color: #000000;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+
+    /*mala practica revisar!!*/
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Header lado derecho */
+
+.navegadorRight{
+    display: flex;
+    justify-content: space-evenly;
+    width: 204px;
+    align-items: center;
+}
+
+.avatarHeader{
+    border-radius: 50%;
+}
+
+/* Aside */
+
+.containerAsideTotal{
+    background-color: #303030;
+}
+
+.containerAside{
+    width: 240px;
+    background-color: #303030;
+    height: auto;
+    /* overflow-y: scroll; */
+} 
+
+.containerPage{
+    display: flex;
+    background-color:  #303030;
+    align-items: center;
+    justify-self: center;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 25px;
+    width: 200px;
+}
+
+.containerPage:hover{
+    background-color: #AAAAAA;
+}
+
+.containerPage2{
+    display: flex;
+    background-color: #303030;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 200px;
+    gap: 25px;
+}
+
+.containerPage2:hover{
+    background-color: #AAAAAA;
+}
+
+.logoAside{
+
+width: 24px;
+height: 24px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.prueba{
+    color: #FFFFFF;
+}
+
+/* seccion del medio del aside */
+.containerAside2{
+    width: 240px;
+    background-color: #303030;
+    color: #FFFFFF;
+}
+
+.containerPage3{
+    display: flex;
+    background-color: #303030;
+    width: 200px;
+    align-items: center;
+    padding-left: 25px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-top: solid 1px #AAAAAA;
+    gap: 25px;
+}
+
+.containerPageSinHover{
+    display: flex;
+    background-color: #303030;
+    width: 200px;
+    align-items: center;
+    padding-left: 25px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-top: solid 1px #AAAAAA;
+    gap: 25px;
+}
+
+.containerPage3:hover{
+    background-color: #AAAAAA;
+}
+
+/* seccion de abajo del aside */
+
+.containerAside3{
+/*     width: 240px; */
+    background-color: #303030;
+/*     height: 500px; */
+}
+
+.subtitulo{
+    color: #AAAAAA;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.containerPage4{
+    display: flex;
+    background-color: #303030;
+    align-items: center;
+    padding-left: 25px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    gap: 25px;
+    width: 200px;
+}
+
+.containerPage4:hover{
+    background-color: #AAAAAA;
+}
+
+.avatarNav{
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+}
+
+/* ultima seccion del aside */
+
+.containerPage5{
+    display: flex;
+    background-color: #303030;
+    align-items: center;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 25px;
+    width: 200px;
+}
+
+.containerPage5:hover{
+    background-color: #AAAAAA;
+}
+
+/* aca empieza es style del contenido principal --- style del video*/
+
+.containerSection{
+    overflow: hidden;
+    width: calc(100vw - 240px);
+}
+
+.videosContainer{
+    padding: 15px 12px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 15px; */
+    background-color: #212121;
+    justify-content: center;
+}
+
+.videosContainer2{
+    width: 276px;
+}
+
+.video{
+    width: 276px;
+    height: 155px;
+    position: relative;
+}
+
+.imgVideo{
+    object-fit: contain;
+
+
+}
+
+.imgTime{
+    position: absolute;
+    z-index: 2;
+    top: 140px;
+    left: 240px;
+}
+
+/* style del texto de los videos */
+
+.containerText{
+    width: 245px;
+}
+
+.containerDescriptionVideo{
+    display: flex;
+    gap: 10px;
+    padding-top: 12px;
+}
+
+.containerAvatar{
+    width: 36px;
+    height: 36px;
+
+}
+
+.avatar{
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.nombreVideo{
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.textoVideo{
+    color: #AAAAAA;
+    font-size: 0.75rem;
+    font-weight: 400;
+    padding-top: 10px;
+    line-height: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Section --> items */
+.mainContainer{
+    display: flex;
+}
+
+.botones{
+    display: flex;
+    height: 54px;
+    background-color: #303030;
+    align-items: center;
+    gap: 10px;
+    border-top: solid 1px #030303;
+    overflow: hidden;
+    flex-wrap: wrap;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+   /*  overflow-x: visible; */
+}
+
+.btn1{
+    width: 40px;
+    height: 32px;
+    border-radius: 32px;
+    border: solid 0.3px #303030;
+    background-color: #FFFFFF;
+    color: #030303;
+}
+
+.btn{
+    width: 53px;
+    height: 32px;
+    border-radius: 32px;
+    border: solid 0.3px #AAAAAA;
+    background-color: #303030;
+    color: #FFFFFF;
+}
+
+/* Section --> videos */
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------*/
+
+/* PAGINA VIDEO */
+
+.btnVideosAll{
+    width: 40px;
+    height: 32px;
+    border-radius: 32px;
+    background-color: #FFFFFF;
+    color: #030303;
+    border: solid 0.3px ;
+    /*ver color del borde*/
+}
+
+.btnVideosAvatar{
+    width: 151px;
+    height: 32px;
+    border: 0.3px solid #AAAAAA;
+    border-radius: 32px;
+    color:  #FFFFFF;
+    background-color: #303030;
+}
+
+.videoAside{
+    width: 30vw;
+    background-color: #181818;
+    height: 94px;
+    padding-bottom: 100px;
+    /* padding-top: 5px; */
+}
+
+.containerVideoAside{
+    /* width: 1500px; */
+    display: flex;
+    gap: 15px;
+
+}
+
+.videosAside2{
+    width: 168px;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.containerVideoDescription{
+    padding-top: 15px;
+}
+
+.avatarAllVideos{
+    padding-bottom: 15px;
+}
+/* ----------------------------------------------------------------------------------------------*/
+
+/* VIDEO EN REPRODUCCIÓN Y COMENTARIOS */
+
+/* .containerVideoReproduccion{
+    height: 360px;
+    width: 640px;
+} */
+.videoEnReproduccion{
+    height: 360px;
+    width: 640px;
+    object-fit: contain;
+}
+
+.videoReproduccionDatos{
+    width: 640px;
+    height: 95px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 20px;
+    background-color: #181818;
+    color: #FFFFFF;
+    line-height: 21px;
+    font-size: 1.1rem;
+}
+
+.videoReproduccionDatos2{
+    color: #AAAAAA;
+    font-size: 0.8rem;
+    line-height: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pulgar{
+    width: 36px;
+    height: 36px;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.imgPulgar{
+    object-fit: contain;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.containerIcons{
+    display: flex;
+    justify-content: center;
+}
+
+.containerIconsTodos{
+    display: flex;
+    gap: 25px;
+}
+
+.cajaAvatar{
+    width: 60px;
+    height: 60px;
+}
+
+.avatarDeVideo{
+    border-radius: 50%;
+    object-fit: contain;
+    display: flex;
+}
+
+.videoAvatarDescription{
+    display: flex;
+}
+
+.cajaAvatarDescription{
+    padding-top: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.videoAvatarDescription{
+    width: 640px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #181818;
+}
+
+.containerCajaDescription{
+    display: flex;
+}
+
+.btnSubscribes{
+    background-color: #CC0000;
+    border-radius: 2px;
+    color: #FFFFFF;
+    font-size: 0.8rem;
+    line-height: 16px;
+    border: none;
+    width: 116px;
+    height: 36px;
+    margin-top: 5px;
+}
+
+.textoVideoDescription{
+    width: 640px;
+    padding-left: 60px;
+    color: #FFFFFF;
+    font-size: 0.8rem;
+    line-height: 16px;
+    background-color: #181818;
+}
+
+.textVideoDescription{
+    color: #AAAAAA;
+    font-size: 0.7rem;
+    line-height: 14px;
+    padding-left: 60px;
+    width: 640px;
+    background-color: #181818;
+    padding-top: 10px;
+}
+
+.claseTexto{
+    color: #FFFFFF;
+    font-size: 0.8rem;
+    line-height: 16px;
+}
+
+.claseTexto2{
+    color: #AAAAAA;
+    font-size: 0.7rem;
+    line-height: 14px;
+}
+
+.containerComments{
+    display: flex;
+    background-color: #181818;
+    width: 640px;
+    gap: 35px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.containerImgComments{
+    display: flex;
+    width: 640px;
+}
+
+.prueba2{
+    width: 142px;
+    height: 24px;
+    color: #FFFFFF;
+    line-height: 22px;
+    font-size: 1rem;
+}
+
+.vector{
+    width: 24px;
+    height: 24px;
+
+}
+
+.vectorImg{
+    object-fit: contain;   
+}
+
+.textoVideo2{
+    color: #FFFFFF;
+    line-height: 24px;
+    font-size: 0.8rem;
+}
+
+.otra{
+    display: flex;
+    width: 640px;
+    background-color: #181818;
+    
+}
+
+.input{
+    width: 100%;
+    margin-left: 20px;
+    border: none ;
+    border-bottom: 1px solid #303030;
+    background-color: #181818;
+}
+
+/*  comentarios de la pagina 3 abajo de todo trabajo en salta */
+
+.otra{
+    padding-bottom: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+.avatarEnComentarios{
+    font-size: 0.75rem;
+    line-height: 20px;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.horaEnComentarios{
+    color: #AAAAAA;
+    font-size: 0.6rem;
+    line-height: 20px;
+    font-weight: 400;
+
+}
+
+.textoEnComentarios{
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 0.6rem;
+    color: #FFFFFF;
+
+}
+
+.iconsComentarios{
+    display: flex;
+    gap: 15px;
+    padding-top: 15px;
+}
+
+.pulsadorComentario{
+    font-weight: 400;
+    font-size: 0.6rem;
+    line-height: 18px;
+    color: #AAAAAA;
+}
+
+.mainContainerVideo{
+    display: flex;
+    gap: 25px;
+    background-color: #181818;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+
+/* PAGINA 2   -------------------------------//////////////////////////////////////---*/
+
+.containerPaginaDos{
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+}
+
+
+.foto{
+    object-fit: fill;
+    width: fit-content;
+    height: 20vh;
+}
+
+.fotoAvatar{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.containerInformationProfile{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.containerProfile{
+    display: flex;
+    flex-direction: column;
+    background-color: #212121;
+    width: 100vw;
+}
+
+.containerProfile2{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.containerNavProfile{
+    display: flex;
+    gap: 35px;
+    padding-top: 15px;
+    justify-content: space-around;
+}
+
+.navPaginaDos{
+    font-weight: 700;
+    font-size: 0.8rem;
+    line-height: 16px;
+    color: #AAAAAA;
+}
+
+.navPaginaDosHome{
+    font-weight: 700;
+    font-size: 0.8rem;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.nombreProfile{
+    font-weight: 400;
+    line-height: 28px;
+    font-size: 1.6rem;
+    color: #FFFFFF;
+}
+
+.followersProfile{
+    font-size: 0.8rem;
+    line-height: 16px;
+    color: #AAAAAA;
+}
+
+.profileVideo{
+    width: 424px;
+    height: 238px ;
+}
+
+.containerDescriptionVideoProfile{
+    display: flex;
+    flex-direction: column;
+}
+
+.containerProfileGeneral{
+    display: flex;
+/*     width: 100vw; */
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.containerVideoAndDescription{
+    display: flex;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    gap: 15px;
+    margin-left: 50px;
+    border-bottom: #303030 solid 1px;
+/*     width: 70%; */
+}
+
+.tituloVideo{
+    padding-bottom: 25px;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.containerGeneral{
+    background-color: #212121;
+}
+
+.viewsVideo{
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: 15px;
+    color: #AAAAAA;
+    padding-bottom: 25px;
+}
+
+.videoText{
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.containerDescriptionVideo2{
+    width: 18vw;
+}
+
+.container1{
+    display: flex;
+    flex-direction: column;
+    padding-top: 35px;
+    padding-left: 50px;
+    gap: 35px;
+}
+
+.titleProfileVideos{
+    padding-left: 50px;
+    gap: 35px;
+    display: flex;
+}
+
+.play{
+    display: flex;
+    gap: 10px;
+}
+
+.textTitleProfileVideos{
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 18px;
+    color: #FFFFFF;
+  
+}
+
+.playAll{
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 18px;
+    color: #AAAAAA;
+}
+
+.VideosContainer3{
+    width: 276px;
+    padding-left: 50px
+}
+
+.containerGeneralVideos{
+    display: flex;
+    gap: 15px;
+}
